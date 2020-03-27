@@ -1,0 +1,9 @@
+{
+  "verbose": false,
+  "watch": [
+    "src",
+    "server",
+    "webpack"
+  ],
+  "exec": "yarn build:dev && node build/server.js"
+}

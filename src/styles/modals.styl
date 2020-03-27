@@ -1,0 +1,183 @@
+/* ------------------- */
+/* Modified by Kevin Salinas */
+/* ------------------- */
+
+
+@import variables
+
+.modal-dialog
+	height 100%
+	max-width 100%
+	margin 0
+	padding 0
+	.modal-content
+		border 0px
+		border-radius 4px
+		height auto
+		min-height 100%
+
+.o-product__modal
+	.modal-header
+		background #f9f9f9
+		border none
+		box-shadow 0 2px 4px 0 rgba(0, 0, 0, 0.1)
+		box-sizing content-box
+		padding 18px
+		min-height 20px
+		.modal-title
+			mixin-font($body1, $carbon)
+			margin 0
+		.close
+			font-size 16px
+			padding-top 18px
+		.a-modalHeder__back
+			color $carbon
+			padding 4px 0 0 14px
+	.modal-footer
+		border 0px
+		p
+			mixin-font($caption,$lead)
+			line-height 1em
+			text-align center
+			margin 0 auto
+			width 230px
+
+.modal
+	.modal-small
+		height auto !important
+		margin 0 auto !important
+		max-width 280px
+
+#edd-modal, #itr-modal
+	.a-product__colorLabel
+		margin-top 5px
+		margin-left 0
+	.a-productColor__item
+		height 25px
+		width 25px
+		.atom-color
+			height 21px
+			width 21px
+
+#edd-modal
+	.a-product__eddModalSize
+		font-size 0.75rem
+
+
+#delete-number-modal
+	left 50%
+	margin-left -45%
+	width 90%
+	.modal-header
+		position relative
+	.modal-dialog
+		height auto
+		align-items center
+	.modal-content
+		height auto
+	.modal-body
+		margin-top 0
+		button
+			display block
+			margin 30px auto
+			width 210px
+		p
+			mixin-font($body2, $carbon)
+			margin 20px auto 0
+			max-width 350px
+			text-align center
+			width 80%
+
+@media only screen and (min-width: 992px)
+	.o-product__modal
+		.modal-header .a-modalHeder__back
+			color $carbon
+			padding 4px 14px 0 0
+	.modal .modal-dialog
+		margin auto !important
+		max-width 510px
+		.modal-content
+			height 500px
+			min-height auto
+			overflow auto
+
+	#edd-modal, #itr-modal
+		.m-product__productColor ul
+			overflow hidden
+		.a-productColor__item
+			margin 0
+			.a-product__colorLabel
+				mixin-font($body1, $lead)
+
+	#social-modal
+		.modal-content
+			height auto
+		.modal-body
+			overflow hidden
+
+	#itr-modal.modal .modal-dialog
+		.modal-content
+			height 510px
+			overflow hidden
+		.m-product__itrSelectStates
+			overflow-x hidden
+			> .row:last-of-type
+				height 200px
+				overflow-y auto
+
+	#availability-modal-itr
+		li:hover
+			background $gray-mid
+		.a-product__store p
+			font-size 0.875em
+
+
+@media only screen and (max-width: 991px)
+	.modal.show
+
+		.modal-dialog-centered
+			align-items: flex-start
+
+			.modal-content
+				border-radius: 0
+
+				.modal-header
+					position: fixed;
+					height: 56px;
+					width: 100%;
+					z-index: 2;
+					padding: 0;
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+
+					.modal-title
+						margin-left: 1rem
+
+					button.close
+						padding: 0
+						margin: 0 1rem 0 0
+
+		.modal-body
+			margin-top: 56px
+
+
+	// For PDP modal in collections
+	#select-product-modal .modal-body{
+		padding: 0;
+	} 
+
+	// Styles for mobile modals 
+	#social-modal,#qty-modal
+		.modal-dialog
+			display: flex
+			align-items: center;
+
+			.modal-header
+				position relative
+
+			.modal-body
+				margin-top: 0
+
+			
+
