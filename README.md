@@ -1,8 +1,9 @@
 # Frontend_Codebase
 # PWA project boilerplate consisting service worker implementation using Google Workbox and HAPI js server with Redux configuration
 
-It also has environment specific configuration set up which can be found in ecosystem.config.js
-Enabled with PM2 for easy build process.
+1. Cntains environment specific configuration set up which can be found in ecosystem.config.js
+2. Enabled with PM2 for easy build process.
+3. CSS is in .styls format which also needs Python installed in the system
 
 Steps to run server in localbox
 
