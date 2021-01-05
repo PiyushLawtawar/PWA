@@ -52,7 +52,7 @@
     "@zeit/next-stylus": "^1.0.1",
     "apollo-server-hapi": "^2.2.3",
     "autoprefixer": "^9.4.4",
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "babel": "6.5.2",
     "babel-cli": "6.16.0",
     "babel-core": "^6.26.3",
