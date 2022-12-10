@@ -67,7 +67,7 @@
     "css-loader": "^2.0.1",
     "dotenv": "^6.2.0",
     "emit-file-loader": "0.0.2",
-    "express": "^4.16.4",
+    "express": "^4.18.2",
     "express-device": "^0.4.2",
     "extract-text-webpack-plugin": "^3.0.2",
     "extracted-loader": "^1.0.7",
